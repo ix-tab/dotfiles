@@ -1,0 +1,88 @@
+! Colours ----------------------------------
+
+
+*.foreground:   #98d1ce
+*.background:   #0a0f14
+*.cursorColor:  #98d1ce
+
+! black
+*.color0:       #0a0f14
+*.color8:       #4d5762
+
+! red
+*.color1:       #c33027
+*.color9:       #d26939
+
+! green
+*.color2:       #26a98b
+*.color10:      #336787
+
+! yellow
+*.color3:       #edb54b
+*.color11:      #245361
+
+! blue
+*.color4:       #195465
+*.color12:      #093748
+
+! magenta
+*.color5:       #4e5165
+*.color13:      #888ba5
+
+! cyan
+*.color6:       #33859d
+*.color14:      #599caa
+
+! white
+*.color7:       #98d1ce
+*.color15:      #d3ebe9
+
+
+!--URxvt
+URxvt.fading:    30
+URxvt.shading:   80
+URxvt.scrollBar: 0
+URxvt.geometry: 81x22
+URxvt.saveLines:1000
+URxvt.inputMethod: none 
+URxvt.preeditType: OnTheSpot,None
+URxvt.imLocale: ja_JP.UTF-8
+URxvt.urlLauncher: firefox 
+URxvt.matcher.button: 1
+URxvt.font:  xft:Anonymous Pro:size=12:antialias=true:autohint=false,xft:IPAGothic:size=12:antialias=true
+URxvt.boldFont: xft:Anonymous Pro:size=12:style=Bold:antialias=true:autohint=false,xft:IPAGothic:size=12:weight=Bold:antialias=true
+URxvt.termName: rxvt-unicode
+URxvt.internalBorder:   0
+URxvt.loginShell: true
+!URxvt.background: [60]#0d111b
+!URxvt.background: [70]#000000
+URxvt.transparent: false 
+URxvt.colorMode: on
+URxvt.cursorBlink: 0
+URxvt.depth:    32
+URxvt.perl-ext-common: ...,tabbed,...
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+
+!--Cursor
+Xcursor.theme: Vanilla-DMZ-AA
+Xcursor.size: 16
+
+!-- XTerm
+XTerm*faceName: anonymouspro:pixelsize=16
+XTerm*utf8: 2
+XTerm*dynamicColors: true
+XTerm*eightBitInput: true
+XTerm*saveLines: 512
+XTerm*scrollTtyKeypress: true
+XTerm*scrollTtyOutput: false
+XTerm*scrollBar: false
+XTerm*rightScrollBar: false
+XTerm*jumpScroll: true
+XTerm*multiScroll: true
+XTerm*toolBar: false
+XTerm*loginShell:true
+XTerm*scrollKey:true
+xterm*VT100.Translations: #override \
+                 Ctrl <Key>V:    insert-selection(CLIPBOARD) \n\
+                 Ctrl <Key>C:    copy-selection(CLIPBOARD)
